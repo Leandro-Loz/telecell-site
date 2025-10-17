@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===================== RESET ===================== */
 * {
     margin: 0;
@@ -329,4 +330,337 @@ footer p {
 }
 
 .footer-social .whatsapp { color: #25d366; }
+=======
+/* ===================== RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ebe7e7;
+}
+
+/* ===================== HEADER ===================== */
+.site-header {
+    background-color: #000000;
+    border-bottom: 1px solid #fdf9f9;
+    padding: 10px 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.header-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.header-info h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f3f2f2;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact a i {
+    margin-right: 5px;
+}
+
+/* WhatsApp e Instagram estilos */
+.whatsapp {
+    color: #25d366;
+}
+
+.instagram {
+    color: #e1306c;
+}
+
+/* Carrinho */
+.cart-btn {
+    position: relative;
+    background-color: #dbab0b;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: #faf8f8;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+
+/* ===================== NAV ===================== */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #f8f7f700;
+    border-bottom: 1px solid #070707;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fffcfc;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #7cc03d;
+    color: #fff;
+}
+
+/* ===================== PRODUTOS ===================== */
+.produto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+/* Produto Card */
+.produto-card {
+    border: 1px solid #fffdfd;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 250px;
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+}
+
+.produto-title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.produto-price {
+    color: #a34747;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.descricao {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Botão Adicionar ao carrinho */
+.btn-comprar {
+    background-color: #ffffff;
+    color: #020202;
+    border: 1px solid #fdfcfc;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #40ad31;
+    border-color: #0c0c0c;
+}
+
+/* ===================== CARROSSEL ===================== */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+    border-radius: 6px;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #faf8f8;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.carousel-btn.prev { left: 5px; }
+.carousel-btn.next { right: 5px; }
+
+/* ===================== MODAL CARRINHO ===================== */
+/* CART MODAL */
+/* Carrinho centralizado */
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #131212; /* cor de fundo do carrinho */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.cart-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.close-cart {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.8rem;    /* aumenta um pouco o tamanho */
+  cursor: pointer;
+  color: #ce3030;          /* 🔹 cor do X (pode trocar para #fff se fundo for escuro) */
+  transition: color 0.3s ease;
+}
+
+.close-cart:hover {
+  color: #ff3b3b;       /* 🔹 muda de cor ao passar o mouse */
+}
+
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Esconde o modal por padrão */
+.hidden {
+  display: none;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+/* SEARCH */
+.search-container { text-align:center; margin:20px 0; }
+#search { padding:10px 15px; width:90%; max-width:400px; border-radius:5px; border:1px solid #ccc; font-size:16px; }
+
+/* FADE-IN */
+.fade-in { animation: fadeIn 0.5s ease forwards; }
+@keyframes fadeIn { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: #070707;
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.footer-social a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-social a i {
+    margin-right: 5px;
+}
+
+.footer-social .whatsapp { color: #25d366; }
+>>>>>>> a3e940b12f5e81cb9d4d4f480818071e15580d59
 .footer-social .instagram { color: #e1306c; }
