@@ -1,138 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telecell - Assistência e Vendas</title>
-<!-- Font Awesome (ícones) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<!-- CSS -->
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<!-- HEADER -->
-<header class="site-header">
-  <div class="search-container">
-    <div class="header-top">
-      <img src="img/logodaempresa.jpeg" alt="Telecell Logo" class="logo">
-      <div class="header-info">
-        <h1>Telecell Assistência - Conserto e Vendas</h1>
-        <div class="contact">
-          <a href="https://wa.me/5547991978372" target="_blank" class="whatsapp">
-            <i class="fab fa-whatsapp"></i> (47) 99197-8372
-          </a>
-          <a href="https://www.instagram.com/telecellassistencia" target="_blank" class="instagram">
-            <i class="fab fa-instagram"></i> @telecellassistencia
-          </a>
-        </div>
-        <p class="endereco">Rua Presidente Juscelino, 34 - Pomerode-SC</p>
-      </div>
-      <button id="open-cart-btn" class="cart-btn" title="Abrir carrinho">
-        <i class="fas fa-shopping-cart"></i><span id="cart-count">0</span>
-      </button>
-    </div>
-    <input type="text" id="search" placeholder="Buscar produtos...">
-  </div>
-  <nav class="main-nav">
-    <a href="#produtos" data-category="todos">Todos</a>
-    <a href="#relogios" data-category="relogios">Relógios</a>
-    <a href="#aparelhos" data-category="aparelhos">Aparelhos</a>
-    <a href="#fones" data-category="fones">Fones</a>
-    <a href="#carregadores" data-category="carregadores">Carregadores</a>
-    <a href="#capinhas" data-category="capinhas">Capinhas</a>
-  </nav>
-</header>
-
-<!-- PRODUCTS -->
-<main>
-<section id="produtos" class="produto-grid">
-
-<!-- RELÓGIO -->
-<article class="produto-card relogios" data-id="relogio-redmi-active-5" data-name="Smart Watch Redmi Active 5" data-price="300.00">
-<div class="carousel" data-index="0">
-<img src="img/relogio/relogio(2).jpeg" alt="relogio 1" class="active">
-<img src="img/relogio/descrçãodorelogio.jpg" alt="relogio 2">
-<img src="img/relogio/relogionobraço.jpg" alt="relogio 3">
-<img src="img/relogio/RELOGIO.jpeg" alt="relogio 4">
-<button class="carousel-btn prev" aria-label="anterior"><</button>
-<button class="carousel-btn next" aria-label="próximo">></button>
-</div>
-<h2 class="produto-title">Smart Watch Redmi Active 5</h2>
-<p class="produto-price">R$ 400,00</p>
-<div class="descricao">Monitoramento de saúde completo, bateria de longa duração e design moderno.</div>
-<button class="btn-comprar">Adicionar ao carrinho</button>
-</article>
-
-<!-- IPHONE 11 -->
-<article class="produto-card aparelhos" data-id="iphone-11-roxo" data-name="iPhone 11 Roxo" data-price="1999.00">
-<div class="carousel" data-index="0">
-<img src="img/iphone11/iphone11.jpg" alt="iphone11-1" class="active">
-<img src="img/iphone11/iphone11roxofrenteeverso-Copia.jpg" alt="iphone11-2">
-<img src="img/iphone11/iphone11todasascores-Copia.jpg" alt="iphone11-3">
-<button class="carousel-btn prev"><</button>
-<button class="carousel-btn next">></button>
-</div>
-<h2 class="produto-title">iPhone 11 Roxo</h2>
-<p class="produto-price">R$ 2.000</p>
-<div class="descricao">O iPhone 11 combina desempenho poderoso com um design elegante e colorido. Suas câmeras duplas capturam fotos e vídeos incríveis, e o chip A13 Bionic garante velocidade e eficiência em todas as tarefas.</div>
-<button class="btn-comprar">Adicionar ao carrinho</button>
-</article>
-
-<!-- IPHONE 12 -->
-<article class="produto-card aparelhos" data-id="iphone-12" data-name="iPhone 12" data-price="1999.00">
-<div class="carousel" data-index="0">
-<img src="img/iphone12/iphone12branco.jpg" alt="iphone12-1" class="active">
-<img src="img/iphone12/iphone12preto.jpg" alt="iphone12-2">
-<img src="img/iphone12/iphone12verde.jpg" alt="iphone12-3">
-<img src="img/iphone12/iphone12 vermelho.jpg" alt="iphone12-4">
-<button class="carousel-btn prev"><</button>
-<button class="carousel-btn next">></button>
-</div>
-<h2 class="produto-title">iPhone 12</h2>
-<p class="produto-price">R$ 2.400</p>
-<div class="descricao">O iPhone 12 traz design moderno com bordas planas e desempenho 5G. Sua tela OLED oferece cores vivas e contraste impressionante, ideal para quem busca qualidade e velocidade no dia a dia.</div>
-<button class="btn-comprar">Adicionar ao carrinho</button>
-</article>
-
-<!-- Continue fazendo o mesmo para todas as outras imagens... -->
-
-</section>
-</main>
-
-<!-- CART MODAL -->
-<div id="cart-modal" class="cart-modal hidden" aria-hidden="true">
-<div class="cart-panel">
-<button id="close-cart" class="close-cart" title="Fechar">&times;</button>
-<h3>Seu Carrinho</h3>
-<div id="cart-items" class="cart-items"></div>
-<div class="cart-footer">
-<div class="cart-total">Total: <span id="cart-total">R$ 0,00</span></div>
-<div class="cart-actions">
-<button id="checkout-btn" class="btn-primary">Finalizar Compra</button>
-<button id="clear-cart" class="btn-secondary">Limpar Carrinho</button>
-</div>
-</div>
-</div>
-</div>
-
-<!-- TOAST -->
-<div id="toast" class="toast hidden">Produto adicionado ao carrinho!</div>
-
-<!-- FOOTER -->
-<footer>
-<p>&copy; 2025 Telecell - Conserto e Venda de Celulares</p>
-<p>Rua Presidente Juscelino, 34 - Pomerode-SC</p>
-<div class="footer-social">
-<a href="https://wa.me/5547991978372" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-<a href="https://www.instagram.com/telecellassistencia" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-</div>
-</footer>
-
-<!-- JS -->
-<script src="javascript.js"></script>
-</body>
-=======
 <!DOCTYPE html> 
 <html lang="pt-BR"> 
 <head> 
@@ -181,10 +46,10 @@
 <!-- RELÓGIO --> 
 <article class="produto-card relogios" data-id="relogio-redmi-active-5" data-name="Smart Watch Redmi Active 5" data-price="300.00"> 
 <div class="carousel" data-index="0"> 
-<img src="relogio/relogio(2).jpeg" alt="relogio 1" class="active"> 
-<img src="relogio/descrçãodorelogio.jpg" alt="relogio 2"> 
-<img src="relogio/relogionobraço.jpg" alt="relogio 3"> 
-<img src="relogio/RELOGIO.jpeg" alt="relogio 3"> 
+<img src="img/relogio/descrçãodorelogio.jpg" alt="relogio 1" class="active"> 
+<img src="img/relogio/RELOGIO.jpeg" alt="relogio 2"> 
+<img src="img/relogio/relogioredmifrente.jpg" alt="relogio 3"> 
+<img src="img/relogio/relogiodelado.jpg" alt="relogio 3"> 
 <button class="carousel-btn prev" aria-label="anterior"><</button> 
 <button class="carousel-btn next" aria-label="próximo">></button> 
 </div> 
@@ -196,9 +61,9 @@
 <!-- IPHONE 11 ROXO --> 
 <article class="produto-card aparelhos" data-id="iphone-11-roxo" data-name="iPhone 11 Roxo" data-price="1999.00"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone11/iphone11.jpg" alt="iphone11-1" class="active"> 
-<img src="iphone11/iphone11roxofrenteeverso-Copia.jpg" alt="iphone11-2"> 
-<img src="iphone11/iphone11todasascores-Copia.jpg" alt="iphone11-3"> 
+<img src="img/iphone11/iphone11.jpg" alt="iphone11-1" class="active"> 
+<img src="img/iphone11/iphone11roxofrenteeverso-Copia.jpg" alt="iphone11-2"> 
+<img src="img/iphone11/iphone11roxofrenteeverso.jpg" alt="iphone11-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -210,10 +75,10 @@
 <!-- IPHONE 12 --> 
 <article class="produto-card aparelhos" data-id="iphone-12" data-name="iPhone 12" data-price="1999.00"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone12/iphone12branco.jpg" alt="iphone12-1" class="active"> 
-<img src="iphone12/iphone12preto.jpg" alt="iphone12-2"> 
-<img src="iphone12/iphone12verde.jpg" alt="iphone12-3"> 
-<img src="iphone12/iphone12 vermelho.jpg" alt="iphone12-3"> 
+<img src="img/iphone12/iphone12 vermelho.jpg" alt="iphone12-1" class="active"> 
+<img src="img/iphone12/iphone12branco.jpg" alt="iphone12-2"> 
+<img src="img/iphone12/iphone12verde.jpg" alt="iphone12-3"> 
+<img src="img/iphone12/iphone12preto.jpg" alt="iphone12-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -225,11 +90,11 @@
 <!-- IPHONE 13 PRO MAX --> 
 <article class="produto-card aparelhos" data-id="iphone-13-pro-max" data-name="iPhone 13 Pro Max" data-price="4200.00"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone13/iphone13berge1.jpg" alt="iphone13pm-1" class="active"> 
-<img src="iphone13/iphone13frenteeverso.jpg" alt="iphone13pm-2"> 
-<img src="iphone13/iphone13.jpg" alt="iphone13pm-3"> 
-<img src="iphone13/iphone13berge.jpg" alt="iphone13pm-3"> 
-<img src="iphone13/iphone13azul.jpg" alt="iphone13pm-3"> 
+<img src="img/iphone13/iphone13.jpg" alt="iphone13pm-1" class="active"> 
+<img src="img/iphone13/iphone13azul.jpg" alt="iphone13pm-2"> 
+<img src="img/iphone13/iphone13berge.jpg" alt="iphone13pm-3"> 
+<img src="img/iphone13/iphone13frenteeverso.jpg" alt="iphone13pm-3"> 
+<img src="img/iphone13/iphone13azul.jpg" alt="iphone13pm-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -241,9 +106,9 @@
 <!-- IPHONE 14 --> 
 <article class="produto-card aparelhos" data-id="iphone-14" data-name="iPhone 14" data-price="4000.00"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone 14/iphone14preto.avif" alt="iphone14-1" class="active"> 
-<img src="iphone 14/iphone142.jpg" alt="iphone14-2"> 
-<img src="iphone 14/iphone14camera.avif" alt="iphone14-3"> 
+<img src="img/iphone 14/iphone14preto.avif" alt="iphone14-1" class="active"> 
+<img src="img/iphone 14/iphone142.jpg" alt="iphone14-2"> 
+<img src="img/iphone 14/iphone14camera.avif" alt="iphone14-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -255,9 +120,9 @@
 <!-- IPHONE 15 --> 
 <article class="produto-card aparelhos" data-id="iphone-15" data-name="iPhone 15" data-price="4500.00"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone15/iphone15.jpg" alt="iphone15-1" class="active"> 
-<img src="iphone15/iphone152.jpg" alt="iphone15-2"> 
-<img src="iphone15/partetraseiadophone15.avif" alt="iphone15-3"> 
+<img src="img/iphone15/iphone15.jpg" alt="iphone15-1" class="active"> 
+<img src="img/iphone15/partetraseiadophone15.avif" alt="iphone15-2"> 
+<img src="img/iphone15/iphone15preto.avif" alt="iphone15-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -270,9 +135,9 @@
 <!-- IPHONE 16 --> 
 <article class="produto-card aparelhos" data-id="iphone-16" data-name="iPhone 16" data-price="5.500"> 
 <div class="carousel" data-index="0"> 
-<img src="iphone16/iphone16branco.jpg" alt="iphone15-1" class="active"> 
-<img src="iphone16/iphone16delado.avif" alt="iphone15-2"> 
-<img src="iphone16/iphone16preto.avif" alt="iphone15-3"> 
+<img src="img/iphone 16/iphone 16 branco.jpg" alt="iphone15-1" class="active"> 
+<img src="img/iphone 16/iphone 16 de lado.avif" alt="iphone15-2"> 
+<img src="img/iphone 16/iphone 16 preto.avif" alt="iphone15-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -284,9 +149,9 @@
 <!-- POCO C71 --> 
 <article class="produto-card aparelhos" data-id="poco-c71" data-name="Poco C71" data-price="2000.00"> 
 <div class="carousel" data-index="0"> 
-<img src="pococ71/pococ71.jpeg" alt="poco1" class="active"> 
-<img src="pococ71/realmec71Copia.jpg" alt="poco2"> 
-<img src="pococ71/pococ71.jpeg" alt="poco3"> 
+<img src="img/pococ71/realmec71-Copia.jpg" alt="poco1" class="active"> 
+<img src="img/pococ71/pococ71.jpeg" alt="poco2"> 
+<img src="img/poco/pococ85.jpeg" alt="poco3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -298,9 +163,9 @@
 <!-- POCO X7 --> 
 <article class="produto-card aparelhos" data-id="poco-x7" data-name="Poco X7" data-price="1999.00"> 
 <div class="carousel" data-index="0"> 
-<img src="pocox7/pocox7.jpeg" alt="pocox7-1" class="active"> 
-<img src="pocox7/pocolateral.jpg" alt="pocox7-2"> 
-<img src="pocox7/pocox7frente everso.jpg" alt="pocox7-3"> 
+<img src="img/pocox7/pocox7frente everso.jpg" alt="pocox7-1" class="active"> 
+<img src="img/pocox7/pocolateral.jpg" alt="pocox7-2"> 
+<img src="img/pocox7/pocox7.jpeg" alt="pocox7-3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -312,9 +177,9 @@
 <!-- FONES --> 
 <article class="produto-card fones" data-id="fones-1" data-name="Fone" data-price="160.00"> 
 <div class="carousel" data-index="0"> 
-<img src="fone/fone2.jpg" alt="fone1" class="active"> 
-<img src="fone/fonepequeno.jpeg" alt="fone2"> 
-<img src="fone/fone3.jpg" alt="fone3"> 
+<img src="img/fone/fone2.jpg" alt="fone1" class="active"> 
+<img src="img/fone/fone3.jpg" alt="fone2"> 
+<img src="img/fone/fonepequeno.jpeg" alt="fone3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -325,9 +190,9 @@
 </article> 
 <article class="produto-card fones" data-id="airpods-pro" data-name="AirPods Pro" data-price="120.00"> 
 <div class="carousel" data-index="0"> 
-<img src="fone/fonesdeouvidos.jpeg" alt="fone" class="active"> 
-<img src="fone/caixadofone.jpg" alt="fone"> 
-<img src="fone/fonesdeouvidos.jpeg" alt="fone"> 
+<img src="img/fone/fonesdeouvidos.jpeg" alt="fone" class="active"> 
+<img src="img/fone/fonesdeouvidos.jpeg" alt="fone"> 
+<img src="img/fone/fonesdeouvidos.jpeg" alt="fone"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -339,9 +204,9 @@
 <!-- CARREGADOR --> 
 <article class="produto-card carregadores" data-id="carregador-original" data-name="Carregador Original iPhone" data-price="350.00"> 
 <div class="carousel" data-index="0"> 
-<img src="caregadoresiphones/cabeçadocarregado.jpg" alt="carregador1" class="active"> 
-<img src="caregadoresiphones/carregadorcompelto.jpg" alt="carregador2"> 
-<img src="caregadoresiphones/carregaodacapinha.jpg" alt="carregador3"> 
+<img src="img/caregadoresiphones/cabeçadocarregado.jpg" alt="carregador1" class="active"> 
+<img src="img/caregadoresiphones/carregadores original.jpeg" alt="carregador2"> 
+<img src="img/caregadoresiphones/carregadorcompelto.jpg" alt="carregador3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -353,9 +218,9 @@
 <!-- CAPINHAS --> 
 <article class="produto-card capinhas" data-id="capinha-comum" data-name="Capinha para iPhone" data-price="30.00"> 
 <div class="carousel" data-index="0"> 
-<img src="capinhaiphone/capinhadoiphonemagnetica2.jpg" alt="capinha1" class="active"> 
-<img src="capinhaiphone/tres capinha.jpeg" alt="capinha2"> 
-<img src="capinhaiphone/capinhadoiphone.jpg" alt="capinha3"> 
+<img src="img/capinhaiphone/capinhadesilicone.jpg" alt="capinha1" class="active"> 
+<img src="img/capinhaiphone/tres capinha.jpeg" alt="capinha2"> 
+<img src="img/capinhaiphone/capinha ipone.jpg" alt="capinha3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -366,9 +231,9 @@
 </article> 
 <article class="produto-card capinhas" data-id="capinha-magnetica" data-name="Capinha Magnética" data-price="30.00"> 
 <div class="carousel" data-index="0"> 
-<img src="capinhaiphone/capinhadoiphonemagnetica2.jpg" alt="capinhamag1" class="active"> 
-<img src="capinhaiphone/capinhaazulescuromagntica.jpeg" alt="capinhamag2"> 
-<img src="capinhaiphone/caixadacapinha.jpeg" alt="capinhamag3"> 
+<img src="img/capinhaiphone/caixadacapinha.jpeg" alt="capinhamag1" class="active"> 
+<img src="img/capinhaiphone/capinha magnetica branca.jpeg" alt="capinhamag2"> 
+<img src="img/capinhaiphone/capinhaazulescuromagntica.jpeg" alt="capinhamag3"> 
 <button class="carousel-btn prev"><</button> 
 <button class="carousel-btn next">></button> 
 </div> 
@@ -409,5 +274,4 @@
 <!-- JS --> 
 <script src="javascript.js"></script> 
 </body> 
->>>>>>> a3e940b12f5e81cb9d4d4f480818071e15580d59
 </html>
