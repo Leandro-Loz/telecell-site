@@ -435,4 +435,58 @@ footer p {
   .carousel {
     height: 160px;
   }
+} /* 👈 ESTA CHAVE FALTAVA AQUI */
+
+/* ===================== FOOTER ===================== */
+footer {
+  background-color: #070707;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Redes sociais */
+.footer-social a {
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-social a i {
+  margin-right: 5px;
+}
+
+.footer-social .whatsapp {
+  color: #25d366;
+}
+.footer-social .instagram {
+  color: #e1306c;
+}
+
+/* Cartões aceitos */
+.cartoes {
+  margin-top: 10px;
+}
+
+.cartoes img {
+  width: 50px;
+  height: auto;
+  margin: 0 6px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.cartoes img:hover {
+  transform: scale(1.1);
+}
+
+
+
